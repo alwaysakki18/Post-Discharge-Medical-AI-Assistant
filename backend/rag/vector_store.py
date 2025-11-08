@@ -12,6 +12,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.docstore.document import Document
+from langchain_community.document_loaders import PyPDFLoader
 
 from ..utils.logger import system_logger
 from ..config import settings
@@ -88,15 +89,32 @@ class VectorStoreManager:
     def index_document(self, file_path: str, metadata: Optional[Dict[str, Any]] = None):
         """
         Index a document into the vector store.
+        Supports both text files (.txt) and PDF files (.pdf).
         
         Args:
             file_path: Path to the document file
             metadata: Additional metadata for the document
         """
         try:
-            # Read document
-            with open(file_path, 'r', encoding='utf-8') as f:
-                text = f.read()
+            file_path_obj = Path(file_path)
+            file_extension = file_path_obj.suffix.lower()
+            
+            # Load document based on file type
+            if file_extension == '.pdf':
+                system_logger.info(f"Loading PDF document: {file_path}")
+                loader = PyPDFLoader(file_path)
+                pages = loader.load()
+                
+                # Extract text from all pages
+                text = "\n\n".join([page.page_content for page in pages])
+                system_logger.info(f"Loaded PDF with {len(pages)} pages")
+                
+            elif file_extension == '.txt':
+                system_logger.info(f"Loading text document: {file_path}")
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    text = f.read()
+            else:
+                raise ValueError(f"Unsupported file type: {file_extension}. Supported types: .pdf, .txt")
             
             # Create document hash for deduplication
             doc_hash = hashlib.md5(text.encode()).hexdigest()
@@ -112,6 +130,7 @@ class VectorStoreManager:
                     "source": file_path,
                     "chunk_id": i,
                     "doc_hash": doc_hash,
+                    "file_type": file_extension,
                     **(metadata or {})
                 }
                 documents.append(Document(page_content=chunk, metadata=doc_metadata))

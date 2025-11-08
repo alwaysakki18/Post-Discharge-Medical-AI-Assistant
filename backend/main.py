@@ -92,10 +92,26 @@ async def startup_event():
             stats = vector_store.get_collection_stats()
             if stats.get("count", 0) == 0:
                 system_logger.info("Indexing nephrology reference materials...")
-                vector_store.index_document(
-                    "./data/nephrology_reference.txt",
-                    metadata={"type": "reference", "subject": "nephrology"}
-                )
+                
+                # Try PDF first, then fallback to text file
+                from pathlib import Path
+                pdf_file = Path("./knowledge base for RAG/comprehensive-clinical-nephrology.pdf")
+                txt_file = Path("./data/nephrology_reference.txt")
+                
+                if pdf_file.exists():
+                    system_logger.info("Using PDF reference (comprehensive clinical nephrology)")
+                    vector_store.index_document(
+                        str(pdf_file),
+                        metadata={"type": "reference", "subject": "nephrology", "format": "pdf"}
+                    )
+                elif txt_file.exists():
+                    system_logger.info("Using text reference")
+                    vector_store.index_document(
+                        str(txt_file),
+                        metadata={"type": "reference", "subject": "nephrology", "format": "txt"}
+                    )
+                else:
+                    system_logger.warning("No reference materials found")
         except Exception as e:
             system_logger.warning(f"Could not index reference materials: {e}")
         

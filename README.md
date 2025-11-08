@@ -9,11 +9,12 @@ This POC demonstrates a chatbot system with multi-agent architecture that manage
 ## ✨ Features
 
 - **Multi-Agent Architecture**: Receptionist Agent and Clinical AI Agent with clear workflows
-- **RAG Implementation**: Semantic search over nephrology reference materials
-- **Patient Data Management**: 25+ dummy patient discharge reports
+- **RAG Implementation**: Semantic search over comprehensive clinical nephrology PDF (88.5 MB medical textbook)
+- **Patient Data Management**: 27 diverse patient discharge reports
 - **Web Search Integration**: Fallback for queries outside reference materials
 - **Comprehensive Logging**: Complete system flow tracking
 - **Modern Web Interface**: Streamlit frontend with FastAPI backend
+- **PDF Knowledge Base**: Professional medical literature for accurate clinical information
 
 ## 🏗️ Architecture
 
@@ -93,8 +94,10 @@ cp .env.example .env
 5. **Initialize the system**
 ```bash
 python scripts/setup_database.py
-python scripts/setup_vector_db.py
+python scripts/setup_vector_db.py  # This will process the PDF (takes 10-15 minutes)
 ```
+
+**Note**: The vector database setup will automatically use the comprehensive clinical nephrology PDF (`knowledge base for RAG/comprehensive-clinical-nephrology.pdf`) for superior medical accuracy. See `PDF_INTEGRATION_GUIDE.md` for details.
 
 ## 🎮 Usage
 
@@ -161,6 +164,8 @@ post-discharge-ai-assistant/
 ├── data/
 │   ├── patient_reports.json
 │   └── nephrology_reference.txt
+├── knowledge base for RAG/
+│   └── comprehensive-clinical-nephrology.pdf
 ├── scripts/
 │   ├── setup_database.py
 │   └── setup_vector_db.py

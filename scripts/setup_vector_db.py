@@ -39,23 +39,45 @@ def main():
             vector_store.delete_collection()
             vector_store = get_vector_store()
         
-        # Index nephrology reference
+        # Index nephrology reference - Try PDF first, then fallback to TXT
         print("📚 Indexing nephrology reference materials...")
-        reference_file = Path(__file__).parent.parent / "data" / "nephrology_reference.txt"
         
-        if not reference_file.exists():
-            print(f"❌ Error: Reference file not found: {reference_file}")
+        # Check for PDF file first (comprehensive clinical nephrology)
+        pdf_file = Path(__file__).parent.parent / "knowledge base for RAG" / "comprehensive-clinical-nephrology.pdf"
+        txt_file = Path(__file__).parent.parent / "data" / "nephrology_reference.txt"
+        
+        if pdf_file.exists():
+            print(f"📄 Found PDF reference: {pdf_file.name}")
+            print("   This may take several minutes to process...")
+            vector_store.index_document(
+                str(pdf_file),
+                metadata={
+                    "type": "reference",
+                    "subject": "nephrology",
+                    "source": "comprehensive-clinical-nephrology.pdf",
+                    "format": "pdf"
+                }
+            )
+            print("✅ PDF reference materials indexed")
+        elif txt_file.exists():
+            print(f"📄 Found text reference: {txt_file.name}")
+            vector_store.index_document(
+                str(txt_file),
+                metadata={
+                    "type": "reference",
+                    "subject": "nephrology",
+                    "source": "nephrology_reference.txt",
+                    "format": "txt"
+                }
+            )
+            print("✅ Text reference materials indexed")
+        else:
+            print(f"❌ Error: No reference file found")
+            print(f"   Looked for:")
+            print(f"   - {pdf_file}")
+            print(f"   - {txt_file}")
             return
         
-        vector_store.index_document(
-            str(reference_file),
-            metadata={
-                "type": "reference",
-                "subject": "nephrology",
-                "source": "nephrology_reference.txt"
-            }
-        )
-        print("✅ Reference materials indexed")
         print()
         
         # Verify indexing
