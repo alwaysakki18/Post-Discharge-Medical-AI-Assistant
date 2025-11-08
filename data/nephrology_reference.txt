@@ -1,0 +1,523 @@
+NEPHROLOGY REFERENCE GUIDE
+==========================
+
+CHAPTER 1: CHRONIC KIDNEY DISEASE (CKD)
+----------------------------------------
+
+1.1 Definition and Staging
+Chronic Kidney Disease is defined as abnormalities of kidney structure or function, present for more than 3 months, with implications for health. CKD is classified into 5 stages based on GFR (Glomerular Filtration Rate):
+
+Stage 1: GFR ≥90 mL/min/1.73m² with kidney damage
+Stage 2: GFR 60-89 mL/min/1.73m² with kidney damage
+Stage 3a: GFR 45-59 mL/min/1.73m²
+Stage 3b: GFR 30-44 mL/min/1.73m²
+Stage 4: GFR 15-29 mL/min/1.73m²
+Stage 5: GFR <15 mL/min/1.73m² or dialysis
+
+1.2 Common Causes
+- Diabetes mellitus (leading cause, ~40% of cases)
+- Hypertension (second leading cause, ~25% of cases)
+- Glomerulonephritis
+- Polycystic kidney disease
+- Chronic interstitial nephritis
+- Obstructive uropathy
+
+1.3 Clinical Manifestations
+Early stages (1-3): Often asymptomatic
+Late stages (4-5):
+- Fatigue and weakness
+- Decreased appetite
+- Sleep disturbances
+- Decreased mental sharpness
+- Muscle cramps
+- Swelling of feet and ankles
+- Persistent itching
+- Chest pain (if fluid builds up around heart)
+- Shortness of breath (if fluid builds up in lungs)
+- Hypertension
+
+1.4 Management Principles
+- Blood pressure control: Target <130/80 mmHg
+- ACE inhibitors or ARBs for proteinuria
+- Glycemic control in diabetics: HbA1c <7%
+- Dietary modifications: protein restriction, sodium restriction
+- Treatment of complications: anemia, bone disease, acidosis
+- Preparation for renal replacement therapy
+
+1.5 Dietary Recommendations
+- Protein: 0.6-0.8 g/kg/day in stages 3-5
+- Sodium: <2 g/day
+- Potassium: Restrict if hyperkalemia present
+- Phosphorus: <800-1000 mg/day in stages 3-5
+- Fluid: Restrict if volume overload present
+
+
+CHAPTER 2: ACUTE KIDNEY INJURY (AKI)
+-------------------------------------
+
+2.1 Definition
+AKI is defined by KDIGO criteria as any of the following:
+- Increase in serum creatinine by ≥0.3 mg/dL within 48 hours
+- Increase in serum creatinine to ≥1.5 times baseline within 7 days
+- Urine volume <0.5 mL/kg/h for 6 hours
+
+2.2 Classification
+Pre-renal (60-70%): Decreased renal perfusion
+- Volume depletion
+- Heart failure
+- Cirrhosis
+- Sepsis
+
+Intrinsic renal (25-40%): Direct kidney damage
+- Acute tubular necrosis (ATN)
+- Acute interstitial nephritis
+- Glomerulonephritis
+- Vascular diseases
+
+Post-renal (5-10%): Urinary tract obstruction
+- Bladder outlet obstruction
+- Bilateral ureteral obstruction
+- Urethral obstruction
+
+2.3 Management
+- Identify and treat underlying cause
+- Discontinue nephrotoxic medications
+- Optimize volume status
+- Avoid contrast agents if possible
+- Monitor electrolytes and acid-base status
+- Adjust medication doses
+- Consider dialysis if severe
+
+
+CHAPTER 3: DIABETIC NEPHROPATHY
+--------------------------------
+
+3.1 Pathophysiology
+Diabetic nephropathy develops through several mechanisms:
+- Hyperglycemia-induced metabolic changes
+- Hemodynamic alterations (glomerular hyperfiltration)
+- Advanced glycation end products (AGEs)
+- Oxidative stress
+- Inflammation
+
+3.2 Stages
+Stage 1: Hyperfiltration and hypertrophy (GFR increased)
+Stage 2: Silent stage (normal GFR, no proteinuria)
+Stage 3: Microalbuminuria (30-300 mg/day)
+Stage 4: Overt nephropathy (>300 mg/day proteinuria)
+Stage 5: End-stage renal disease
+
+3.3 Management
+- Intensive glycemic control: HbA1c <7%
+- Blood pressure control: <130/80 mmHg
+- ACE inhibitors or ARBs (first-line for proteinuria)
+- SGLT2 inhibitors (cardio-renal protection)
+- Dietary protein restriction
+- Lipid management
+- Regular monitoring of kidney function
+
+
+CHAPTER 4: GLOMERULAR DISEASES
+-------------------------------
+
+4.1 Nephrotic Syndrome
+Characterized by:
+- Proteinuria >3.5 g/day
+- Hypoalbuminemia (<3 g/dL)
+- Edema
+- Hyperlipidemia
+
+Common causes:
+- Minimal change disease (most common in children)
+- Focal segmental glomerulosclerosis (FSGS)
+- Membranous nephropathy
+- Diabetic nephropathy
+
+Treatment:
+- Corticosteroids (first-line for minimal change disease)
+- Immunosuppressive agents (for FSGS, membranous nephropathy)
+- ACE inhibitors/ARBs for proteinuria
+- Diuretics for edema
+- Statins for hyperlipidemia
+- Anticoagulation if high risk for thrombosis
+
+4.2 Nephritic Syndrome
+Characterized by:
+- Hematuria
+- Hypertension
+- Edema
+- Proteinuria (usually <3.5 g/day)
+- Decreased GFR
+
+Common causes:
+- Post-streptococcal glomerulonephritis
+- IgA nephropathy
+- Lupus nephritis
+- ANCA-associated vasculitis
+
+4.3 IgA Nephropathy
+Most common primary glomerulonephritis worldwide
+- Presents with episodic gross hematuria (often with URI)
+- Microscopic hematuria between episodes
+- Variable proteinuria
+
+Treatment:
+- ACE inhibitors/ARBs
+- Corticosteroids (if proteinuria >1 g/day despite RAAS blockade)
+- Fish oil (omega-3 fatty acids)
+- Blood pressure control
+
+
+CHAPTER 5: HYPERTENSION AND KIDNEY DISEASE
+-------------------------------------------
+
+5.1 Hypertensive Nephrosclerosis
+Chronic hypertension leads to:
+- Arteriosclerosis of renal vessels
+- Glomerulosclerosis
+- Tubulointerstitial fibrosis
+- Progressive CKD
+
+5.2 Blood Pressure Targets in CKD
+- General CKD: <130/80 mmHg
+- CKD with proteinuria: <130/80 mmHg
+- Diabetic kidney disease: <130/80 mmHg
+
+5.3 Antihypertensive Therapy
+First-line agents:
+- ACE inhibitors (e.g., lisinopril, enalapril)
+- ARBs (e.g., losartan, valsartan)
+
+Additional agents:
+- Calcium channel blockers (amlodipine, diltiazem)
+- Diuretics (thiazides in early CKD, loop diuretics in advanced CKD)
+- Beta-blockers (if cardiac indication)
+
+
+CHAPTER 6: ELECTROLYTE DISORDERS IN KIDNEY DISEASE
+---------------------------------------------------
+
+6.1 Hyperkalemia
+Common in advanced CKD due to decreased potassium excretion
+
+Management:
+- Dietary potassium restriction (<2-3 g/day)
+- Avoid potassium-sparing diuretics
+- Potassium binders (sodium polystyrene sulfonate, patiromer)
+- Dialysis if severe
+
+6.2 Hyperphosphatemia
+Develops in CKD stages 3-5
+
+Management:
+- Dietary phosphorus restriction (<800-1000 mg/day)
+- Phosphate binders (calcium-based, sevelamer, lanthanum)
+- Avoid phosphorus-containing additives
+
+6.3 Metabolic Acidosis
+Common in CKD stage 4-5 (serum bicarbonate <22 mEq/L)
+
+Management:
+- Sodium bicarbonate supplementation (target bicarbonate 23-29 mEq/L)
+- Dietary acid load reduction
+
+
+CHAPTER 7: CKD-MINERAL AND BONE DISORDER (CKD-MBD)
+---------------------------------------------------
+
+7.1 Pathophysiology
+- Decreased phosphate excretion → hyperphosphatemia
+- Decreased calcitriol production → hypocalcemia
+- Secondary hyperparathyroidism
+- Bone disease (osteitis fibrosa, adynamic bone disease)
+- Vascular calcification
+
+7.2 Management
+- Phosphate control: diet restriction, phosphate binders
+- Vitamin D supplementation: calcitriol or vitamin D analogs
+- Calcimimetics: cinacalcet (for secondary hyperparathyroidism)
+- PTH targets: 2-9 times upper limit of normal in dialysis patients
+
+
+CHAPTER 8: ANEMIA IN CKD
+-------------------------
+
+8.1 Causes
+- Decreased erythropoietin production (primary cause)
+- Iron deficiency
+- Inflammation
+- Blood loss
+- Shortened RBC lifespan
+
+8.2 Diagnosis
+- Hemoglobin <13 g/dL (men), <12 g/dL (women)
+- Evaluate iron studies: ferritin, transferrin saturation
+- Rule out other causes: B12, folate deficiency, bleeding
+
+8.3 Management
+- Iron supplementation (oral or IV)
+  * Target ferritin >100 ng/mL, TSAT >20%
+- Erythropoiesis-stimulating agents (ESAs)
+  * Epoetin alfa, darbepoetin alfa
+  * Target Hb 10-11.5 g/dL
+- Avoid over-correction (increased cardiovascular risk)
+
+
+CHAPTER 9: POLYCYSTIC KIDNEY DISEASE (PKD)
+-------------------------------------------
+
+9.1 Autosomal Dominant PKD (ADPKD)
+Most common inherited kidney disease (1 in 400-1000)
+
+Clinical features:
+- Multiple bilateral kidney cysts
+- Kidney enlargement
+- Hypertension (early manifestation)
+- Chronic pain
+- Hematuria
+- Kidney stones
+- Progressive CKD
+
+Extra-renal manifestations:
+- Liver cysts (most common)
+- Intracranial aneurysms (5-10%)
+- Mitral valve prolapse
+- Colonic diverticulosis
+
+9.2 Management
+- Blood pressure control: ACE inhibitors/ARBs, target <110/75 mmHg
+- Tolvaptan (vasopressin V2 receptor antagonist) - slows cyst growth
+- Pain management
+- Screen for intracranial aneurysms (if family history or high-risk)
+- Genetic counseling
+- Prepare for dialysis/transplantation
+
+
+CHAPTER 10: LUPUS NEPHRITIS
+----------------------------
+
+10.1 Classification (ISN/RPS)
+Class I: Minimal mesangial lupus nephritis
+Class II: Mesangial proliferative lupus nephritis
+Class III: Focal lupus nephritis
+Class IV: Diffuse lupus nephritis (most severe)
+Class V: Membranous lupus nephritis
+Class VI: Advanced sclerosing lupus nephritis
+
+10.2 Clinical Presentation
+- Proteinuria (nephrotic or sub-nephrotic)
+- Hematuria
+- Hypertension
+- Decreased kidney function
+- Active urinary sediment
+
+10.3 Treatment
+Class III/IV (proliferative):
+- Induction: Cyclophosphamide or mycophenolate mofetil + corticosteroids
+- Maintenance: Mycophenolate mofetil or azathioprine
+
+Class V (membranous):
+- ACE inhibitors/ARBs
+- Immunosuppression if nephrotic syndrome
+
+
+CHAPTER 11: KIDNEY STONES (NEPHROLITHIASIS)
+--------------------------------------------
+
+11.1 Types of Stones
+- Calcium oxalate (most common, 70-80%)
+- Calcium phosphate
+- Uric acid
+- Struvite (infection stones)
+- Cystine
+
+11.2 Risk Factors
+- Low fluid intake
+- High sodium diet
+- High animal protein intake
+- Obesity
+- Family history
+- Certain medications
+
+11.3 Prevention
+General measures:
+- Increase fluid intake (>2.5 L/day)
+- Limit sodium (<2 g/day)
+- Normal calcium intake (1000-1200 mg/day)
+- Limit animal protein
+
+Specific measures:
+- Calcium oxalate: Limit oxalate-rich foods, thiazide diuretics, potassium citrate
+- Uric acid: Alkalinize urine, allopurinol
+- Cystine: High fluid intake, alkalinize urine, tiopronin
+
+
+CHAPTER 12: MEDICATION MANAGEMENT IN CKD
+-----------------------------------------
+
+12.1 Medications Requiring Dose Adjustment
+- Antibiotics: aminoglycosides, vancomycin, fluoroquinolones
+- Antivirals: acyclovir, ganciclovir
+- Cardiovascular: digoxin, atenolol
+- Diabetes: metformin (avoid if eGFR <30), insulin
+- Anticoagulants: enoxaparin, dabigatran
+
+12.2 Nephrotoxic Medications to Avoid
+- NSAIDs (can worsen kidney function, cause AKI)
+- Aminoglycosides (use with caution, monitor levels)
+- Contrast agents (risk of contrast-induced nephropathy)
+- Calcineurin inhibitors (tacrolimus, cyclosporine)
+- Lithium
+
+12.3 Safe Medication Use
+- Always calculate eGFR before prescribing
+- Adjust doses based on kidney function
+- Monitor drug levels when appropriate
+- Educate patients about nephrotoxic medications
+
+
+CHAPTER 13: DIALYSIS
+--------------------
+
+13.1 Indications for Dialysis Initiation
+Absolute indications (emergent):
+- Severe hyperkalemia (>6.5 mEq/L with ECG changes)
+- Severe metabolic acidosis (pH <7.1)
+- Pulmonary edema refractory to diuretics
+- Uremic pericarditis
+- Uremic encephalopathy
+
+Relative indications:
+- GFR <10-15 mL/min/1.73m² with uremic symptoms
+- Severe volume overload
+- Malnutrition refractory to dietary intervention
+
+13.2 Hemodialysis
+- Performed 3 times per week, 3-4 hours per session
+- Requires vascular access: AV fistula (preferred), AV graft, or catheter
+- Rapid solute and fluid removal
+
+Complications:
+- Hypotension
+- Muscle cramps
+- Infection (catheter-related)
+- Access thrombosis
+
+13.3 Peritoneal Dialysis
+- Continuous ambulatory peritoneal dialysis (CAPD)
+- Automated peritoneal dialysis (APD)
+- Uses peritoneal membrane as dialyzer
+
+Advantages:
+- Home-based
+- Better preservation of residual kidney function
+- Hemodynamic stability
+
+Complications:
+- Peritonitis
+- Catheter-related infections
+- Hernias
+- Protein loss
+
+
+CHAPTER 14: KIDNEY TRANSPLANTATION
+-----------------------------------
+
+14.1 Evaluation
+Recipient evaluation:
+- Cardiovascular assessment
+- Infectious disease screening
+- Cancer screening
+- Psychosocial evaluation
+- Blood type and HLA typing
+
+14.2 Immunosuppression
+Induction therapy:
+- Basiliximab or antithymocyte globulin
+
+Maintenance therapy (triple therapy):
+- Calcineurin inhibitor (tacrolimus or cyclosporine)
+- Antiproliferative agent (mycophenolate mofetil)
+- Corticosteroids (prednisone)
+
+14.3 Complications
+Acute rejection:
+- Occurs in first 6 months
+- Treated with high-dose corticosteroids or antibody therapy
+
+Chronic rejection:
+- Progressive decline in kidney function
+- May require return to dialysis
+
+Infections:
+- CMV, BK virus, pneumocystis
+- Prophylaxis and monitoring essential
+
+Malignancies:
+- Increased risk due to immunosuppression
+- Skin cancer, PTLD (post-transplant lymphoproliferative disorder)
+
+
+CHAPTER 15: SPECIAL POPULATIONS
+--------------------------------
+
+15.1 Elderly Patients with CKD
+Considerations:
+- Age-related decline in GFR
+- Multiple comorbidities
+- Polypharmacy
+- Frailty assessment
+- Shared decision-making for dialysis
+
+15.2 Pregnancy and Kidney Disease
+- Increased risk of preeclampsia
+- Worsening of kidney function
+- Close monitoring required
+- Medication adjustments (avoid ACE inhibitors/ARBs)
+
+15.3 Acute Kidney Injury in Hospitalized Patients
+Prevention:
+- Avoid nephrotoxic medications
+- Maintain adequate hydration
+- Monitor kidney function
+- Adjust medication doses
+
+Management:
+- Identify and treat underlying cause
+- Supportive care
+- Consider nephrology consultation
+
+
+CHAPTER 16: PATIENT EDUCATION AND SELF-MANAGEMENT
+--------------------------------------------------
+
+16.1 Key Educational Topics
+- Understanding kidney disease and its progression
+- Medication adherence
+- Dietary modifications
+- Blood pressure monitoring
+- Recognition of warning signs
+- Importance of follow-up
+
+16.2 Dietary Education
+- Sodium restriction techniques
+- Reading food labels
+- Potassium and phosphorus content of foods
+- Protein portion control
+- Fluid management
+
+16.3 Warning Signs Requiring Medical Attention
+- Decreased urine output
+- Severe swelling
+- Shortness of breath
+- Chest pain
+- Confusion or altered mental status
+- Severe nausea/vomiting
+- Irregular heartbeat
+
+16.4 Self-Monitoring
+- Daily weights
+- Blood pressure monitoring
+- Blood glucose monitoring (if diabetic)
+- Medication tracking
+- Symptom diary
