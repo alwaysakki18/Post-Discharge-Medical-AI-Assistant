@@ -88,12 +88,16 @@ def get_system_status():
         return None
 
 
-def send_message(message: str):
+def send_message(message: str, session_id: str = None):
     """Send message to API."""
     try:
+        payload = {"message": message}
+        if session_id:
+            payload["session_id"] = session_id
+        
         response = requests.post(
             f"{API_BASE_URL}/chat",
-            json={"message": message},
+            json=payload,
             timeout=30
         )
         if response.status_code == 200:
@@ -153,12 +157,51 @@ def main():
         # Session controls
         st.header("🔄 Session Controls")
         if st.button("Reset Conversation", use_container_width=True):
-            if reset_session():
-                st.session_state.messages = []
-                st.success("Session reset successfully!")
-                st.rerun()
+            st.session_state.messages = []
+            st.session_state.session_id = None
+            st.session_state.current_patient = None
+            st.success("Session reset successfully!")
+            st.rerun()
+        
+        st.divider()
+        
+        # Download Report Section
+        st.header("📄 Download Report")
+        patient_name_input = st.text_input(
+            "Enter patient name to download report:",
+            placeholder="e.g., John Smith",
+            key="pdf_patient_name"
+        )
+        if st.button("📥 Download PDF Report", use_container_width=True):
+            if patient_name_input:
+                with st.spinner("Generating PDF..."):
+                    try:
+                        response = requests.post(
+                            f"{API_BASE_URL}/patient/report/pdf",
+                            json={"patient_name": patient_name_input},
+                            timeout=30
+                        )
+                        if response.status_code == 200:
+                            # Get filename from headers or create default
+                            filename = f"discharge_report_{patient_name_input.replace(' ', '_')}.pdf"
+                            
+                            # Offer download
+                            st.download_button(
+                                label="💾 Save PDF",
+                                data=response.content,
+                                file_name=filename,
+                                mime="application/pdf",
+                                use_container_width=True
+                            )
+                            st.success(f"✅ Report generated for {patient_name_input}!")
+                        elif response.status_code == 404:
+                            st.error(f"❌ Patient '{patient_name_input}' not found")
+                        else:
+                            st.error("❌ Error generating report")
+                    except Exception as e:
+                        st.error(f"❌ Error: {str(e)}")
             else:
-                st.error("Failed to reset session")
+                st.warning("Please enter a patient name")
         
         st.divider()
         
@@ -198,6 +241,17 @@ def main():
     # Initialize session state
     if "messages" not in st.session_state:
         st.session_state.messages = []
+        # Add initial greeting from Receptionist Agent
+        st.session_state.messages.append({
+            "role": "assistant",
+            "content": "👋 Hello! I'm your post-discharge care assistant. I'm here to help you with your recovery. What's your name?",
+            "agent": "Receptionist Agent",
+            "timestamp": datetime.now().isoformat()
+        })
+    if "session_id" not in st.session_state:
+        st.session_state.session_id = None
+    if "current_patient" not in st.session_state:
+        st.session_state.current_patient = None
     
     # Main chat interface
     st.header("💬 Chat Interface")
@@ -218,9 +272,13 @@ def main():
                 </div>
                 """, unsafe_allow_html=True)
             else:
-                agent_badge_class = "receptionist-badge" if agent == "receptionist" else "clinical-badge"
-                agent_name = "Receptionist Agent" if agent == "receptionist" else "Clinical AI Agent"
-                agent_icon = "👋" if agent == "receptionist" else "⚕️"
+                # Normalize agent name
+                agent_lower = agent.lower()
+                is_receptionist = "receptionist" in agent_lower
+                
+                agent_badge_class = "receptionist-badge" if is_receptionist else "clinical-badge"
+                agent_name = "Receptionist Agent" if is_receptionist else "Clinical AI Agent"
+                agent_icon = "👋" if is_receptionist else "⚕️"
                 
                 st.markdown(f"""
                 <div class="chat-message assistant-message">
@@ -254,10 +312,14 @@ def main():
             
             # Show thinking message
             with st.spinner("🤔 Processing..."):
-                # Send to API
-                response = send_message(user_input)
+                # Send to API with session_id
+                response = send_message(user_input, st.session_state.session_id)
             
             if response:
+                # Store session_id for subsequent messages
+                if not st.session_state.session_id:
+                    st.session_state.session_id = response.get("session_id")
+                
                 # Add assistant response to chat
                 st.session_state.messages.append({
                     "role": "assistant",

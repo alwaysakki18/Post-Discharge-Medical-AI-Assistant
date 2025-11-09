@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 from langchain.tools import Tool
 from pydantic import BaseModel, Field
 
-from ..rag.vector_store import get_vector_store
+from ..rag.vector_store_openai import get_vector_store
 from ..utils.logger import system_logger
 
 

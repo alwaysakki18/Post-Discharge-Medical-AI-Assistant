@@ -53,7 +53,7 @@ class Interaction(Base):
     agent = Column(String)  # receptionist or clinical
     message_type = Column(String)  # user_input, agent_response, handoff
     message = Column(Text)
-    metadata = Column(JSON)
+    meta_data = Column(JSON)  # Renamed from metadata to avoid SQLAlchemy reserved word
     
     def to_dict(self):
         """Convert interaction to dictionary."""
@@ -65,5 +65,5 @@ class Interaction(Base):
             "agent": self.agent,
             "message_type": self.message_type,
             "message": self.message,
-            "metadata": self.metadata
+            "metadata": self.meta_data
         }

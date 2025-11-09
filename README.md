@@ -9,9 +9,12 @@ This POC demonstrates a chatbot system with multi-agent architecture that manage
 ## ✨ Features
 
 - **Multi-Agent Architecture**: Receptionist Agent and Clinical AI Agent with clear workflows
+- **Natural Conversational AI**: Engaging, human-like responses similar to ChatGPT
 - **RAG Implementation**: Semantic search over comprehensive clinical nephrology PDF (88.5 MB medical textbook)
 - **Patient Data Management**: 27 diverse patient discharge reports
+- **PDF Report Generation**: Download professional discharge reports in PDF format
 - **Web Search Integration**: Fallback for queries outside reference materials
+- **Automatic Greeting**: Receptionist agent greets users immediately when chat opens
 - **Comprehensive Logging**: Complete system flow tracking
 - **Modern Web Interface**: Streamlit frontend with FastAPI backend
 - **PDF Knowledge Base**: Professional medical literature for accurate clinical information

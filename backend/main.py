@@ -11,7 +11,7 @@ from datetime import datetime
 
 from .agents.agent_graph import create_multi_agent_system
 from .database.database import get_db_manager
-from .rag.vector_store import get_vector_store
+from .rag.vector_store_openai import get_vector_store  # Using OpenAI embeddings
 from .utils.logger import system_logger
 from .config import settings
 
