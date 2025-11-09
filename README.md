@@ -198,3 +198,15 @@ DataSmith GenAI Intern Project
 ## 📞 Support
 
 For issues and questions, please open an issue on GitHub.
+
+---
+
+## 👨‍💻 Developer
+
+**Akshay Pimpale** — AI & Data Science | Machine Learning | GenAI Enthusiast
+
+* GitHub: [https://github.com/alwaysakki18](https://github.com/alwaysakki18)
+* LinkedIn: (https://www.linkedin.com/in/alwaysakki18/)
+* EMail: (akshaypimpale18@gmail.com)
+
+---
