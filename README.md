@@ -1,4 +1,4 @@
-# Post Discharge Medical AI Assistant (POC)
+# Post Discharge Medical AI Assistant 
 
 A multi-agent AI system for post-discharge patient care management with RAG capabilities and nephrology expertise.
 
