@@ -22,7 +22,9 @@ This POC demonstrates a chatbot system with multi-agent architecture that manage
 
 ## 📸 Demo Output
 
-![Chat Demo](Demo/Screenshot%202025-09-23%20174216.png)
+![Chat Demo](Demo%20UI%20%26%20Output/Screenshot%202025-11-09%20174802.png)
+
+
 
 
 ## 🏗️ Architecture
