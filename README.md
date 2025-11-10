@@ -19,6 +19,12 @@ This POC demonstrates a chatbot system with multi-agent architecture that manage
 - **Modern Web Interface**: Streamlit frontend with FastAPI backend
 - **PDF Knowledge Base**: Professional medical literature for accurate clinical information
 
+
+## 📸 Demo Output
+
+![Chat Demo](Demo/Screenshot%202025-09-23%20174216.png)
+
+
 ## 🏗️ Architecture
 
 ### Components
